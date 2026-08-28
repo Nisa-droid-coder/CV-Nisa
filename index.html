@@ -35,7 +35,6 @@
       transition: all 0.2s ease;
     }
 
-    /* Hero – professional blue-grey */
     .hero-section {
       background: linear-gradient(135deg, #2b3a67 0%, #1f2b4e 100%);
       padding: 2rem 2.5rem 2rem 2.5rem;
@@ -84,6 +83,17 @@
       font-weight: 500;
       color: #e6edff;
       border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .badge-award {
+      background: #f5d742;
+      color: #1f2b4e;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      display: inline-block;
+      margin-left: 0.5rem;
     }
 
     .contact-pills {
@@ -346,6 +356,25 @@
       box-shadow: 0 6px 12px rgba(43,58,103,0.10);
     }
 
+    .award-block {
+      background: #fcf5e8;
+      border-radius: 1.5rem;
+      padding: 0.8rem 1.2rem;
+      border-left: 6px solid #f5d742;
+      margin: 0.8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .award-block i {
+      font-size: 2rem;
+      color: #d4a017;
+    }
+    .award-block strong {
+      color: #1f2b4e;
+    }
+
     ul {
       margin-left: 1.2rem;
       font-size: 0.85rem;
@@ -353,6 +382,17 @@
     }
     ul li {
       margin-bottom: 0.2rem;
+    }
+
+    .certificate-badge {
+      background: #eef4ff;
+      border-radius: 2rem;
+      padding: 0.3rem 1.2rem;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: #1f2b4e;
+      border: 1px dashed #3d5a8c;
     }
   </style>
 </head>
@@ -364,7 +404,10 @@
     <div class="hero-content">
       <div class="name-titles">
         <h1>Nisa Shah Nahar</h1>
-        <div class="badge-pink"><i class="fas fa-briefcase"></i> IT Intern · Data & Systems</div>
+        <div class="badge-pink">
+          <i class="fas fa-briefcase"></i> IT Intern · Data & Systems
+          <span class="badge-award"><i class="fas fa-medal"></i> Silver @ iNVENTX 2026</span>
+        </div>
         <div class="contact-pills">
           <span><i class="fas fa-map-marker-alt"></i> Dengkil, Selangor</span>
           <a href="tel:0179422338"><i class="fas fa-phone-alt"></i> 017-9422338</a>
@@ -392,12 +435,22 @@
           Final-year Data Science student @ MMU, passionate about systems, data, and building practical solutions. 
           Seeking <strong>full-time IT / Data Analyst</strong> opportunities from Oct 2026.
         </p>
+        <!-- AWARD HIGHLIGHT -->
+        <div class="award-block">
+          <i class="fas fa-trophy"></i>
+          <div>
+            <strong>🏆 Silver Award – iNVENTX Invention Competition 2026</strong><br />
+            <span style="font-size:0.85rem;">ML-Based Prediction of Early-Onset Hypertension in Young Adults</span>
+            <div style="margin-top:4px;"><span class="certificate-badge"><i class="fas fa-certificate"></i> Certificate · 2 July 2026</span></div>
+          </div>
+        </div>
         <div class="highlight-text">
           <i class="fas fa-bullseye" style="color:#2b3a67;"></i>  “Bridge between data insights and real-world systems — reliable, curious, and impact-driven.”
         </div>
         <button class="btn-interact" id="funFactBtn"><i class="fas fa-lightbulb"></i> 💡 Quick insight</button>
         <div id="funFactMsg" class="interactive-message" style="display: none;">
-          🔍 During internship: built internal forms with HTML/JS, extracted server data, and streamlined user/package account handling.
+          🔍 During internship: built internal forms with HTML/JS, extracted server data, and streamlined user/package account handling. <br />
+          <span style="font-size:0.8rem; margin-top:6px; display:block;">🏅 Also awarded Silver at iNVENTX 2026 for hypertension prediction research.</span>
         </div>
       </div>
 
@@ -442,7 +495,7 @@
 
     <!-- RIGHT COLUMN -->
     <div>
-      <!-- INTERNSHIP (new) first -->
+      <!-- INTERNSHIP -->
       <div class="card">
         <div class="card-header">
           <i class="fas fa-hospital"></i>
@@ -465,7 +518,7 @@
         </div>
       </div>
 
-      <!-- Work experience (previous) -->
+      <!-- Work experience -->
       <div class="card">
         <div class="card-header">
           <i class="fas fa-briefcase"></i>
@@ -506,9 +559,15 @@
           <div style="font-weight:700;">🎓 Bachelor of Computer Science (Data Science)</div>
           <div class="company">Multimedia University Cyberjaya · CGPA 3.4</div>
           <div><strong>📌 Final Year Project:</strong> ML-based real-time hypertension prediction across age groups</div>
+          <div style="margin: 6px 0 4px;">
+            <span class="badge-award" style="background:#f5d742; font-size:0.75rem;"><i class="fas fa-medal"></i> Silver Award – iNVENTX 2026</span>
+          </div>
           <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" class="project-link-badge">
             <i class="fas fa-external-link-alt"></i> Live Dashboard
           </a>
+          <div style="margin-top: 8px; font-size:0.8rem; background:#f5f9ff; padding:0.3rem 0.8rem; border-radius:1rem; display:inline-block;">
+            <i class="fas fa-file-pdf"></i> Certificate: Silver Award, iNVENTX Invention Competition 2026
+          </div>
         </div>
         <div class="edu-item" style="margin-top: 1rem;">
           <div style="font-weight:700;">🎓 Diploma of Information Technology</div>
@@ -549,7 +608,8 @@
     </div>
   </div>
   <footer>
-    <i class="fas fa-briefcase" style="color:#2b3a67;"></i> IT Intern · ready for the next step — let’s connect.
+    <i class="fas fa-briefcase" style="color:#2b3a67;"></i> IT Intern · ready for the next step — let’s connect. 
+    <span style="margin-left:1rem;"><i class="fas fa-medal" style="color:#d4a017;"></i> Silver @ iNVENTX 2026</span>
   </footer>
 </div>
 
@@ -575,7 +635,7 @@
 
     mlBtn.addEventListener('click', () => {
       skillDetailMsg.style.display = 'block';
-      skillDetailMsg.innerHTML = '<i class="fas fa-chart-line"></i> 🧠 Hypertension Prediction Project: PyTorch + multi-age data, clinical insights. <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" style="color:#1f2b4e;font-weight:600;display:inline-block;margin-top:6px;"><i class="fas fa-external-link-alt"></i> Live Dashboard</a>';
+      skillDetailMsg.innerHTML = '<i class="fas fa-chart-line"></i> 🧠 Hypertension Prediction Project: PyTorch + multi-age data, clinical insights. <br />🏅 <strong>Silver Award – iNVENTX 2026</strong> <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" style="color:#1f2b4e;font-weight:600;display:inline-block;margin-top:6px;"><i class="fas fa-external-link-alt"></i> Live Dashboard</a>';
       skillDetailMsg.style.background = "#e6edfa";
     });
     scrapeBtn.addEventListener('click', () => {
@@ -669,7 +729,7 @@
     });
 
     funFactMsg.style.display = 'none';
-    console.log('💼 Professional portfolio — ready for full-time opportunities');
+    console.log('💼 Professional portfolio — with iNVENTX 2026 Silver Award');
   })();
 </script>
 </body>
