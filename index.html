@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Nisa Shah Nahar · Interactive Resume Portfolio</title>
+  <title>Nisa Shah Nahar · Data & IT Professional</title>
   <!-- Google Fonts + Font Awesome 6 -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,39 +17,40 @@
     }
 
     body {
-      background: linear-gradient(145deg, #ffe6f0 0%, #ffd9e6 100%);
+      background: linear-gradient(145deg, #f0f2f5 0%, #e6e9ef 100%);
       font-family: 'Inter', sans-serif;
       padding: 2rem 1.5rem;
-      color: #2d2a2e;
+      color: #1e1e2a;
       scroll-behavior: smooth;
     }
 
     .resume-container {
       max-width: 1280px;
       margin: 0 auto;
-      background: rgba(255, 245, 248, 0.85);
+      background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(2px);
       border-radius: 3rem;
-      box-shadow: 0 25px 45px -12px rgba(236, 72, 120, 0.35), 0 8px 18px rgba(0,0,0,0.05);
+      box-shadow: 0 25px 45px -12px rgba(30, 30, 46, 0.20), 0 8px 18px rgba(0,0,0,0.04);
       overflow: hidden;
       transition: all 0.2s ease;
     }
 
+    /* Hero – professional blue-grey */
     .hero-section {
-      background: linear-gradient(135deg, #ffb3c6 0%, #ff9eb5 100%);
+      background: linear-gradient(135deg, #2b3a67 0%, #1f2b4e 100%);
       padding: 2rem 2.5rem 2rem 2.5rem;
       position: relative;
       overflow: hidden;
-      border-bottom: 6px solid #fff3f5;
+      border-bottom: 4px solid #e0e6f0;
     }
 
     .hero-section::before {
-      content: "✨";
+      content: "⚡";
       font-size: 140px;
       position: absolute;
       bottom: -20px;
       right: 10px;
-      opacity: 0.2;
+      opacity: 0.10;
       pointer-events: none;
       transform: rotate(-8deg);
     }
@@ -68,64 +69,66 @@
       font-size: 3.2rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      color: #2c1a21;
-      text-shadow: 1px 2px 12px rgba(255,230,240,0.8);
+      color: #ffffff;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.20);
       margin-bottom: 0.3rem;
     }
 
     .badge-pink {
-      background: #fff0f3;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(4px);
       padding: 0.3rem 1rem;
       border-radius: 40px;
       display: inline-block;
       font-size: 0.9rem;
-      font-weight: 600;
-      color: #b13e62;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-      backdrop-filter: blur(2px);
+      font-weight: 500;
+      color: #e6edff;
+      border: 1px solid rgba(255,255,255,0.15);
     }
 
     .contact-pills {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 0.8rem;
       margin-top: 1rem;
     }
 
     .contact-pills a, .contact-pills span {
-      background: rgba(255,250,252,0.9);
+      background: rgba(255,255,255,0.10);
+      backdrop-filter: blur(4px);
       padding: 0.5rem 1.2rem;
       border-radius: 80px;
       font-size: 0.85rem;
       font-weight: 500;
       text-decoration: none;
-      color: #b13e62;
+      color: #f0f4ff;
       transition: 0.2s;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      backdrop-filter: blur(2px);
-      border: 1px solid rgba(255,215,225,0.8);
+      border: 1px solid rgba(255,255,255,0.10);
     }
 
     .contact-pills a:hover {
-      background: white;
+      background: rgba(255,255,255,0.25);
       transform: translateY(-3px);
-      box-shadow: 0 8px 18px rgba(177,62,98,0.15);
-      border-color: #ffb7c9;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      border-color: rgba(255,255,255,0.3);
     }
 
     .avatar-icon {
-      font-size: 3.2rem;
-      background: #fff0f3;
+      font-size: 2.8rem;
+      background: rgba(255,255,255,0.10);
+      backdrop-filter: blur(4px);
       width: 90px;
       height: 90px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 16px 32px rgba(0,0,0,0.1);
-      border: 3px solid white;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+      border: 2px solid rgba(255,255,255,0.20);
+      color: #ffffff;
     }
 
     .dashboard-grid {
@@ -150,73 +153,72 @@
     }
 
     .card {
-      background: rgba(255, 252, 253, 0.92);
-      backdrop-filter: blur(4px);
+      background: #ffffff;
       border-radius: 2rem;
       padding: 1.5rem;
       margin-bottom: 1.5rem;
-      box-shadow: 0 8px 20px rgba(160, 60, 90, 0.08);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
       transition: transform 0.25s ease, box-shadow 0.25s;
-      border: 1px solid rgba(255, 190, 210, 0.5);
+      border: 1px solid #eef2f8;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 18px 32px rgba(177, 62, 98, 0.12);
-      background: #fffdfe;
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px rgba(30, 30, 46, 0.08);
+      background: #fcfdff;
     }
 
     .card-header {
       display: flex;
       align-items: center;
       gap: 10px;
-      border-bottom: 2px solid #ffe2ec;
+      border-bottom: 2px solid #eef2f8;
       padding-bottom: 0.75rem;
       margin-bottom: 1.2rem;
     }
 
     .card-header i {
-      font-size: 1.7rem;
-      color: #e36d92;
-      background: #ffeef3;
+      font-size: 1.6rem;
+      color: #2b3a67;
+      background: #eef4ff;
       padding: 8px;
-      border-radius: 18px;
+      border-radius: 16px;
     }
 
     .card-header h2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 600;
-      color: #972d54;
+      color: #1e2a44;
     }
 
-    .job-item, .edu-item, .exp-item {
+    .job-item, .edu-item {
       margin-bottom: 1.4rem;
     }
 
     .job-title {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 1.05rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      color: #2a2024;
+      color: #1a1f2e;
     }
 
     .company {
       font-weight: 600;
-      color: #bc647f;
+      color: #3d4f7a;
       margin: 0.2rem 0 0.4rem;
       font-size: 0.85rem;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.2px;
     }
 
     .date-chip {
-      background: #ffe6ed;
+      background: #eef2f8;
       font-size: 0.7rem;
       font-weight: 600;
       padding: 0.2rem 0.8rem;
       border-radius: 50px;
-      color: #bc4e73;
+      color: #2b3a67;
     }
 
     .skill-badge-container {
@@ -227,12 +229,12 @@
     }
 
     .skill-badge {
-      background: #ffecf0;
+      background: #eef4ff;
       padding: 0.3rem 1rem;
       border-radius: 30px;
       font-size: 0.8rem;
       font-weight: 500;
-      color: #b34269;
+      color: #1f2b4e;
       transition: 0.1s;
       cursor: default;
     }
@@ -246,36 +248,37 @@
     }
 
     .stat-card {
-      background: white;
+      background: #f8faff;
       border-radius: 1.5rem;
       padding: 1rem;
       text-align: center;
       flex: 1;
-      box-shadow: 0 4px 10px #ffdae4;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
       transition: 0.2s;
+      border: 1px solid #eef2f8;
     }
 
     .stat-number {
       font-size: 1.9rem;
-      font-weight: 800;
-      color: #dd7e9e;
+      font-weight: 700;
+      color: #1f2b4e;
     }
 
     .highlight-text {
-      background: linear-gradient(120deg, #ffdee8, #fff0f5);
+      background: #f5f9ff;
       padding: 0.8rem 1.2rem;
       border-radius: 1.2rem;
       font-weight: 500;
-      border-left: 5px solid #f5a2be;
+      border-left: 5px solid #3d5a8c;
     }
 
     .btn-interact {
-      background: #ffdfe8;
+      background: #eef4ff;
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 2rem;
       font-weight: 600;
-      color: #a53f60;
+      color: #1f2b4e;
       cursor: pointer;
       transition: all 0.2s;
       margin-top: 10px;
@@ -285,38 +288,31 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
+      border: 1px solid transparent;
     }
 
     .btn-interact:hover {
-      background: #ffb7c9;
-      color: #3c1e2a;
+      background: #dce6fa;
+      color: #0f1a30;
       transform: scale(0.98);
+      border-color: #bcc9e6;
     }
 
     footer {
-      background: #ffecf1;
+      background: #f0f4fc;
       text-align: center;
       padding: 1.2rem;
       font-size: 0.75rem;
-      color: #b25d7a;
-      border-top: 1px solid #ffdae4;
+      color: #2b3a67;
+      border-top: 1px solid #e0e8f2;
     }
 
     a {
       text-decoration: none;
     }
 
-    .github-link, .linkedin-link {
-      transition: 0.2s;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      100% { transform: translateY(-4px); }
-    }
-
     .interactive-message {
-      background: #fff1f5;
+      background: #f0f6ff;
       border-radius: 1.2rem;
       padding: 0.7rem;
       text-align: center;
@@ -324,53 +320,61 @@
       margin-top: 1rem;
       transition: 0.2s;
       font-weight: 500;
-      color: #b55578;
+      color: #1e2a44;
     }
 
     .project-link-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: #fff0f5;
+      background: #eef4ff;
       padding: 0.3rem 1rem 0.3rem 0.8rem;
       border-radius: 60px;
       font-weight: 600;
-      color: #b13e62;
-      border: 1px solid #ffc1d2;
+      color: #1f2b4e;
+      border: 1px solid #d0ddea;
       transition: 0.15s;
       margin-top: 6px;
     }
     .project-link-badge i {
-      color: #e36d92;
+      color: #2b3a67;
     }
     .project-link-badge:hover {
       background: white;
-      border-color: #e36d92;
+      border-color: #3d5a8c;
       transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(177,62,98,0.12);
+      box-shadow: 0 6px 12px rgba(43,58,103,0.10);
+    }
+
+    ul {
+      margin-left: 1.2rem;
+      font-size: 0.85rem;
+      color: #2d3347;
+    }
+    ul li {
+      margin-bottom: 0.2rem;
     }
   </style>
 </head>
 <body>
 
 <div class="resume-container">
-  <!-- hero section -->
+  <!-- Hero -->
   <div class="hero-section">
     <div class="hero-content">
       <div class="name-titles">
-        <h1>Nisa Shah Nahar ✨</h1>
-        <div class="badge-pink"><i class="fas fa-chart-line"></i> Data Science · ML Enthusiast</div>
+        <h1>Nisa Shah Nahar</h1>
+        <div class="badge-pink"><i class="fas fa-briefcase"></i> IT Intern · Data & Systems</div>
         <div class="contact-pills">
           <span><i class="fas fa-map-marker-alt"></i> Dengkil, Selangor</span>
           <a href="tel:0179422338"><i class="fas fa-phone-alt"></i> 017-9422338</a>
           <a href="mailto:nisashahnahar@gmail.com"><i class="far fa-envelope"></i> nisashahnahar@gmail.com</a>
-          <!-- LinkedIn link updated with correct profile -->
           <a href="https://www.linkedin.com/in/nisa-shah-nahar-209652272" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
           <a href="https://github.com/Nisa-droid-coder" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
       </div>
       <div class="avatar-icon">
-        <i class="fas fa-robot" style="font-size: 3rem; color:#e36d92;"></i>
+        <i class="fas fa-laptop-code" style="font-size: 2.8rem;"></i>
       </div>
     </div>
   </div>
@@ -380,16 +384,20 @@
     <div>
       <div class="card">
         <div class="card-header">
-          <i class="fas fa-user-astronaut"></i>
+          <i class="fas fa-user-tie"></i>
           <h2>About me</h2>
         </div>
-        <p style="line-height: 1.45; margin-bottom: 1rem;">🌟 Final-semester CS student @ MMU (Data Science) with passion for data analysis, ML & software development. Web scraping, preprocessing & real-world impact. <strong>Internship ready</strong> – 27 July → 18 Oct 2026.</p>
+        <p style="line-height: 1.5; margin-bottom: 1rem;">
+          <strong>IT Intern</strong> at Aurelius Hospital Negeri Sembilan (Jul 2026 – present). 
+          Final-year Data Science student @ MMU, passionate about systems, data, and building practical solutions. 
+          Seeking <strong>full-time IT / Data Analyst</strong> opportunities from Oct 2026.
+        </p>
         <div class="highlight-text">
-          <i class="fas fa-heart" style="color:#e36d92;"></i>  “Turning data into delightful decisions — with empathy & code”
+          <i class="fas fa-bullseye" style="color:#2b3a67;"></i>  “Bridge between data insights and real-world systems — reliable, curious, and impact-driven.”
         </div>
-        <button class="btn-interact" id="funFactBtn"><i class="fas fa-star-of-life"></i> ✨ Spark a fun fact ✨</button>
+        <button class="btn-interact" id="funFactBtn"><i class="fas fa-lightbulb"></i> 💡 Quick insight</button>
         <div id="funFactMsg" class="interactive-message" style="display: none;">
-          💡 Did you know? I built a ML system for real-time hypertension prediction across age groups — combining health data science & fairness!
+          🔍 During internship: built internal forms with HTML/JS, extracted server data, and streamlined user/package account handling.
         </div>
       </div>
 
@@ -403,6 +411,7 @@
           <span class="skill-badge">PHP</span><span class="skill-badge">HTML/CSS/JS</span><span class="skill-badge">SQL</span>
           <span class="skill-badge">Pandas</span><span class="skill-badge">PyTorch</span><span class="skill-badge">ML Basics</span>
           <span class="skill-badge">Web Scraping</span><span class="skill-badge">Data Preprocessing</span>
+          <span class="skill-badge">System Troubleshoot</span>
         </div>
         <div class="stats-row" style="margin-top: 1rem;">
           <div class="stat-card"><span class="stat-number">3.4</span><br>CGPA (CS)</div>
@@ -418,25 +427,54 @@
       <div class="card">
         <div class="card-header">
           <i class="far fa-calendar-check"></i>
-          <h2>Internship countdown</h2>
+          <h2>Internship timeline</h2>
         </div>
-        <div id="countdownDisplay" style="font-size: 1.3rem; font-weight: 700; color:#b34469; text-align: center; margin: 0.5rem 0;">––</div>
-        <p style="font-size:0.8rem; text-align:center;">🎯 Starting 27 July 2026 — let’s create impact!</p>
-        <button id="countdownRefreshBtn" class="btn-interact" style="background:#ffe0e9;"><i class="fas fa-sync-alt"></i> Check days left</button>
+        <div style="font-size: 1.1rem; font-weight: 600; color:#1f2b4e; text-align: center; margin: 0.5rem 0;">
+          <i class="fas fa-clock"></i> Jul 2026 – Oct 2026 · On-site
+        </div>
+        <p style="font-size:0.8rem; text-align:center; background:#f0f6ff; padding:0.4rem; border-radius:2rem;">
+          🚀 Available for full-time roles from November 2026
+        </p>
+        <button id="countdownRefreshBtn" class="btn-interact" style="background:#e6edfa;"><i class="fas fa-calendar-day"></i> Days until internship ends</button>
+        <div id="countdownDisplay" style="font-size: 1.2rem; font-weight: 600; color:#1f2b4e; text-align: center; margin-top: 0.5rem;">––</div>
       </div>
     </div>
 
     <!-- RIGHT COLUMN -->
     <div>
+      <!-- INTERNSHIP (new) first -->
+      <div class="card">
+        <div class="card-header">
+          <i class="fas fa-hospital"></i>
+          <h2>Current Internship</h2>
+        </div>
+        <div class="job-item">
+          <div class="job-title">Information Technology Intern <span class="date-chip">Jul 2026 – Present</span></div>
+          <div class="company">Aurelius Hospital Negeri Sembilan · On-site</div>
+          <ul>
+            <li>Assisting in solving system and hardware issues across departments.</li>
+            <li>Building internal forms using HTML, CSS, and JavaScript.</li>
+            <li>Extracting and managing data from servers using HTML/JS.</li>
+            <li>Handling user, item, and package accounts — ensuring data integrity.</li>
+          </ul>
+          <div style="margin-top: 0.6rem; display: flex; flex-wrap: wrap; gap: 6px;">
+            <span class="skill-badge" style="background:#dce6fa;">Software Development</span>
+            <span class="skill-badge" style="background:#dce6fa;">System Management</span>
+            <span class="skill-badge" style="background:#dce6fa;">User Accounts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work experience (previous) -->
       <div class="card">
         <div class="card-header">
           <i class="fas fa-briefcase"></i>
-          <h2>Work experience</h2>
+          <h2>Earlier experience</h2>
         </div>
         <div class="job-item">
           <div class="job-title">Part-time Clinic Assistant <span class="date-chip">Apr 2026 – present</span></div>
           <div class="company">Klinik Marisa, Dengkil</div>
-          <ul style="margin-left: 1.2rem; font-size:0.85rem; color:#4e3640;">
+          <ul>
             <li>Patient registration & records management, medication dispensing support</li>
             <li>Tech troubleshooting & digital content (video editing)</li>
           </ul>
@@ -444,7 +482,7 @@
         <div class="job-item">
           <div class="job-title">Part-time Data Analyst Assistant <span class="date-chip">Jan 2025 – Dec 2025</span></div>
           <div class="company">Clean Wave Laundry, Dengkil</div>
-          <ul style="margin-left: 1.2rem; font-size:0.85rem;">
+          <ul>
             <li>Sales data analysis → business trends & inventory decisions</li>
             <li>Google Business manager & minor tech support</li>
           </ul>
@@ -452,7 +490,7 @@
         <div class="job-item">
           <div class="job-title">Web Scraper Intern <span class="date-chip">Jul 2023 – Oct 2023</span></div>
           <div class="company">Fresh Futures</div>
-          <ul style="margin-left: 1.2rem; font-size:0.85rem;">
+          <ul>
             <li>Python scraping scripts + HTML parsing, large-scale data cleaning</li>
             <li>Improved recommendation accuracy via structured data</li>
           </ul>
@@ -468,7 +506,6 @@
           <div style="font-weight:700;">🎓 Bachelor of Computer Science (Data Science)</div>
           <div class="company">Multimedia University Cyberjaya · CGPA 3.4</div>
           <div><strong>📌 Final Year Project:</strong> ML-based real-time hypertension prediction across age groups</div>
-          <!-- FYP project link connected -->
           <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" class="project-link-badge">
             <i class="fas fa-external-link-alt"></i> Live Dashboard
           </a>
@@ -479,88 +516,88 @@
           <div><strong>📌 Final Project:</strong> Functional travel booking website (full-stack design)</div>
         </div>
         <div class="highlight-text" style="margin-top: 0.8rem;">
-          <i class="fas fa-microchip"></i> Passionate about building real-time systems & intuitive data pipelines. 
+          <i class="fas fa-microchip"></i> Passionate about real-time systems, data pipelines, and delivering business value.
         </div>
       </div>
 
-      <!-- live skill interaction -->
+      <!-- skill interaction -->
       <div class="card">
         <div class="card-header">
-          <i class="fas fa-chart-simple"></i>
-          <h2>💡 live skill interaction</h2>
+          <i class="fas fa-robot"></i>
+          <h2>⚡ skill spotlight</h2>
         </div>
-        <p style="margin-bottom: 8px;">Curious about my web scraping or ML expertise? tap below:</p>
+        <p style="margin-bottom: 8px;">Tap to see how I apply tech in real-world scenarios:</p>
         <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <button id="mlSkillBtn" class="btn-interact" style="width:auto; flex:1;"><i class="fas fa-brain"></i> ML insight</button>
-          <button id="scrapeSkillBtn" class="btn-interact" style="width:auto; flex:1;"><i class="fas fa-spider"></i> Scraper story</button>
+          <button id="mlSkillBtn" class="btn-interact" style="width:auto; flex:1;"><i class="fas fa-brain"></i> ML & data</button>
+          <button id="scrapeSkillBtn" class="btn-interact" style="width:auto; flex:1;"><i class="fas fa-server"></i> Systems</button>
         </div>
-        <div id="skillDetailMsg" class="interactive-message" style="display: none; background:#ffeef3; font-size:0.85rem;"></div>
+        <div id="skillDetailMsg" class="interactive-message" style="display: none; background:#f0f6ff; font-size:0.85rem;"></div>
       </div>
-      
+
       <!-- digital footprint -->
       <div class="card">
         <div class="card-header">
-          <i class="fab fa-github-alt"></i>
+          <i class="fas fa-share-alt"></i>
           <h2>digital footprint</h2>
         </div>
         <div style="display: flex; gap: 1rem; justify-content: space-around; flex-wrap: wrap;">
-          <a href="https://github.com/Nisa-droid-coder" target="_blank" class="contact-pills" style="background:#feeef3; width:100%; justify-content:center;"><i class="fab fa-github"></i> github.com/Nisa-droid-coder</a>
-          <a href="https://www.linkedin.com/in/nisa-shah-nahar-209652272" target="_blank" class="contact-pills" style="background:#feeef3; width:100%; justify-content:center;"><i class="fab fa-linkedin"></i> linkedin.com/in/nisa-shah-nahar</a>
+          <a href="https://github.com/Nisa-droid-coder" target="_blank" class="contact-pills" style="background:#eef4ff; width:100%; justify-content:center; color:#1f2b4e;"><i class="fab fa-github"></i> github.com/Nisa-droid-coder</a>
+          <a href="https://www.linkedin.com/in/nisa-shah-nahar-209652272" target="_blank" class="contact-pills" style="background:#eef4ff; width:100%; justify-content:center; color:#1f2b4e;"><i class="fab fa-linkedin"></i> linkedin.com/in/nisa-shah-nahar</a>
         </div>
-        <p style="font-size:0.75rem; margin-top: 10px; text-align:center;">✨ Open to collaboration & data-driven innovation ✨</p>
+        <p style="font-size:0.75rem; margin-top: 10px; text-align:center;">✨ Open to full-time IT / Data roles starting Nov 2026 ✨</p>
       </div>
     </div>
   </div>
   <footer>
-    <i class="far fa-heart" style="color:#e36d92;"></i> Interactive resume – light pink edition • reach out for an inspiring internship (July–Oct 2026) 
+    <i class="fas fa-briefcase" style="color:#2b3a67;"></i> IT Intern · ready for the next step — let’s connect.
   </footer>
 </div>
 
 <script>
   (function() {
-    // fun fact
+    // fun fact toggle
     const funFactBtn = document.getElementById('funFactBtn');
     const funFactMsg = document.getElementById('funFactMsg');
     funFactBtn.addEventListener('click', () => {
       if (funFactMsg.style.display === 'none' || getComputedStyle(funFactMsg).display === 'none') {
         funFactMsg.style.display = 'block';
-        funFactBtn.innerHTML = '<i class="fas fa-times-circle"></i> Hide fun fact';
+        funFactBtn.innerHTML = '<i class="fas fa-times-circle"></i> Hide insight';
       } else {
         funFactMsg.style.display = 'none';
-        funFactBtn.innerHTML = '<i class="fas fa-star-of-life"></i> ✨ Spark a fun fact ✨';
+        funFactBtn.innerHTML = '<i class="fas fa-lightbulb"></i> 💡 Quick insight';
       }
     });
 
-    // ML & Scraper details
+    // ML & Systems interactive
     const mlBtn = document.getElementById('mlSkillBtn');
     const scrapeBtn = document.getElementById('scrapeSkillBtn');
     const skillDetailMsg = document.getElementById('skillDetailMsg');
 
     mlBtn.addEventListener('click', () => {
       skillDetailMsg.style.display = 'block';
-      skillDetailMsg.innerHTML = '<i class="fas fa-chart-line"></i> 🧠 Hypertension Prediction Project: built a real-time ML system using PyTorch & data from multi-age groups — achieved robust clinical insights, focus on fairness across demographics. <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" style="color:#b13e62;font-weight:600;display:inline-block;margin-top:6px;"><i class="fas fa-external-link-alt"></i> Live Dashboard</a>';
-      skillDetailMsg.style.background = "#ffe6ef";
+      skillDetailMsg.innerHTML = '<i class="fas fa-chart-line"></i> 🧠 Hypertension Prediction Project: PyTorch + multi-age data, clinical insights. <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" style="color:#1f2b4e;font-weight:600;display:inline-block;margin-top:6px;"><i class="fas fa-external-link-alt"></i> Live Dashboard</a>';
+      skillDetailMsg.style.background = "#e6edfa";
     });
     scrapeBtn.addEventListener('click', () => {
       skillDetailMsg.style.display = 'block';
-      skillDetailMsg.innerHTML = '<i class="fas fa-code"></i> 🕸️ Web scraping at Fresh Futures: Python + BeautifulSoup/HTML parsing, cleaned 10k+ records, reduced duplication by 32%, boosted recommendation quality via structured datasets.';
-      skillDetailMsg.style.background = "#ffe6ef";
+      skillDetailMsg.innerHTML = '<i class="fas fa-server"></i> 🔧 At Aurelius Hospital: building internal forms, extracting server data with JS, handling user/package accounts — bridging IT and operations.';
+      skillDetailMsg.style.background = "#e6edfa";
     });
 
-    // countdown to July 27, 2026
+    // Countdown: internship end date (Oct 18, 2026)
     function updateCountdown() {
-      const targetDate = new Date(2026, 6, 27);
+      const endDate = new Date(2026, 9, 18); // Oct 18, 2026
       const now = new Date();
-      const diff = targetDate - now;
+      const diff = endDate - now;
       const countdownDiv = document.getElementById('countdownDisplay');
       if (diff <= 0) {
-        countdownDiv.innerHTML = "🎉 Internship period started! 🎉";
+        countdownDiv.innerHTML = "✅ Internship completed — ready for full-time!";
         return;
       }
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor((diff % (86400000)) / (3600000));
       const minutes = Math.floor((diff % 3600000) / 60000);
-      countdownDiv.innerHTML = `📅 ${days} days  ${hours} hours  ${minutes} min   → 27 July 2026`;
+      countdownDiv.innerHTML = `📅 ${days}d ${hours}h ${minutes}m until completion`;
     }
     updateCountdown();
     document.getElementById('countdownRefreshBtn').addEventListener('click', () => {
@@ -570,25 +607,19 @@
       if(oldMsg) oldMsg.remove();
       const tempMsg = document.createElement('div');
       tempMsg.className = 'interactive-message temp-countdown-msg';
-      tempMsg.innerHTML = '⏳ Countdown refreshed! Ready to innovate.';
+      tempMsg.innerHTML = '⏳ Countdown updated!';
       tempMsg.style.marginTop = '8px';
       parent.appendChild(tempMsg);
-      setTimeout(() => { tempMsg.remove(); }, 1800);
+      setTimeout(() => { tempMsg.remove(); }, 1600);
     });
 
-    // stat cards hover effect
-    const stats = document.querySelectorAll('.stat-card');
-    stats.forEach(stat => {
-      stat.addEventListener('mouseenter', () => {
-        stat.style.transform = 'scale(1.02)';
-        stat.style.transition = '0.1s';
-      });
-      stat.addEventListener('mouseleave', () => {
-        stat.style.transform = 'scale(1)';
-      });
+    // stat cards hover
+    document.querySelectorAll('.stat-card').forEach(stat => {
+      stat.addEventListener('mouseenter', () => { stat.style.transform = 'scale(1.02)'; stat.style.transition = '0.1s'; });
+      stat.addEventListener('mouseleave', () => { stat.style.transform = 'scale(1)'; });
     });
 
-    // email copy on click
+    // email copy
     const emailLink = document.querySelector('a[href="mailto:nisashahnahar@gmail.com"]');
     if(emailLink) {
       emailLink.addEventListener('click', (e) => {
@@ -596,85 +627,49 @@
         navigator.clipboard.writeText('nisashahnahar@gmail.com').catch(() => {});
         const msgDiv = document.createElement('div');
         msgDiv.className = 'interactive-message';
-        msgDiv.innerText = '📧 Email copied to clipboard!';
+        msgDiv.innerText = '📧 Email copied!';
         msgDiv.style.position = 'fixed';
         msgDiv.style.bottom = '20px';
         msgDiv.style.right = '20px';
         msgDiv.style.zIndex = '999';
-        msgDiv.style.maxWidth = '220px';
-        msgDiv.style.background = '#ffecf0';
+        msgDiv.style.maxWidth = '200px';
+        msgDiv.style.background = '#eef4ff';
         msgDiv.style.borderRadius = '2rem';
         msgDiv.style.padding = '10px 18px';
-        msgDiv.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+        msgDiv.style.boxShadow = '0 4px 12px rgba(0,0,0,0.06)';
         document.body.appendChild(msgDiv);
-        setTimeout(() => { msgDiv.remove(); }, 1800);
+        setTimeout(() => { msgDiv.remove(); }, 1600);
       });
     }
 
-    // Skill badge click feedback
-    const badges = document.querySelectorAll('.skill-badge');
-    badges.forEach(b => {
+    // skill badge click feedback
+    document.querySelectorAll('.skill-badge').forEach(b => {
       b.addEventListener('click', () => {
         const msgAlert = document.createElement('div');
         msgAlert.classList.add('interactive-message');
-        msgAlert.textContent = `⚡ ${b.innerText} — core competency ready`;
+        msgAlert.textContent = `⚡ ${b.innerText} — skill ready`;
         msgAlert.style.position = 'fixed';
         msgAlert.style.bottom = '20px';
         msgAlert.style.left = '20px';
         msgAlert.style.zIndex = '1000';
-        msgAlert.style.background = '#ffffffc9';
-        msgAlert.style.backdropFilter = 'blur(4px)';
+        msgAlert.style.background = '#ffffff';
+        msgAlert.style.border = '1px solid #d0ddea';
         document.body.appendChild(msgAlert);
-        setTimeout(() => msgAlert.remove(), 1300);
+        setTimeout(() => msgAlert.remove(), 1200);
       });
     });
 
-    // LinkedIn + GitHub links (already correct in HTML, but keep interactive)
-    // ensure all contact-pills with linkedin/github open correctly
+    // ensure LinkedIn / GitHub links work
     document.querySelectorAll('.contact-pills a').forEach(link => {
       if (link.href.includes('linkedin.com') || link.innerText.includes('LinkedIn')) {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          window.open('https://www.linkedin.com/in/nisa-shah-nahar-209652272', '_blank');
-        });
+        link.addEventListener('click', (e) => { e.preventDefault(); window.open('https://www.linkedin.com/in/nisa-shah-nahar-209652272', '_blank'); });
       } else if (link.href.includes('github.com') || link.innerText.includes('GitHub')) {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          window.open('https://github.com/Nisa-droid-coder', '_blank');
-        });
+        link.addEventListener('click', (e) => { e.preventDefault(); window.open('https://github.com/Nisa-droid-coder', '_blank'); });
       }
     });
 
-    // fix any other github/linkedin link in digital footprint
-    document.querySelectorAll('.card .contact-pills a').forEach(link => {
-      if (link.innerText.includes('github.com')) {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          window.open('https://github.com/Nisa-droid-coder', '_blank');
-        });
-      } else if (link.innerText.includes('linkedin.com')) {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          window.open('https://www.linkedin.com/in/nisa-shah-nahar-209652272', '_blank');
-        });
-      }
-    });
-
-    // fun fact default hidden
     funFactMsg.style.display = 'none';
-
-    // card header hover
-    document.querySelectorAll('.card-header').forEach(h => {
-      h.addEventListener('mouseover', () => {
-        h.style.transition = '0.15s';
-        h.style.paddingLeft = '0.2rem';
-      });
-      h.addEventListener('mouseout', () => {
-        h.style.paddingLeft = '';
-      });
-    });
-
-    console.log('🌸 Light Pink Interactive Resume — data-driven & vibrant!');
+    console.log('💼 Professional portfolio — ready for full-time opportunities');
   })();
 </script>
 </body>
