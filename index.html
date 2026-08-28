@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Nisa Shah Nahar · Interactive Resume Portfolio</title>
   <!-- Google Fonts + Font Awesome 6 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     * {
       margin: 0;
@@ -24,7 +24,6 @@
       scroll-behavior: smooth;
     }
 
-    /* main glass-card container */
     .resume-container {
       max-width: 1280px;
       margin: 0 auto;
@@ -36,7 +35,6 @@
       transition: all 0.2s ease;
     }
 
-    /* interactive header with wave & floating elements */
     .hero-section {
       background: linear-gradient(135deg, #ffb3c6 0%, #ff9eb5 100%);
       padding: 2rem 2.5rem 2rem 2.5rem;
@@ -130,7 +128,6 @@
       border: 3px solid white;
     }
 
-    /* grid layout */
     .dashboard-grid {
       display: grid;
       grid-template-columns: 1fr 1.6fr;
@@ -152,7 +149,6 @@
       }
     }
 
-    /* cards style */
     .card {
       background: rgba(255, 252, 253, 0.92);
       backdrop-filter: blur(4px);
@@ -241,7 +237,6 @@
       cursor: default;
     }
 
-    /* interactive animated stats section */
     .stats-row {
       display: flex;
       justify-content: space-between;
@@ -331,12 +326,35 @@
       font-weight: 500;
       color: #b55578;
     }
+
+    .project-link-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff0f5;
+      padding: 0.3rem 1rem 0.3rem 0.8rem;
+      border-radius: 60px;
+      font-weight: 600;
+      color: #b13e62;
+      border: 1px solid #ffc1d2;
+      transition: 0.15s;
+      margin-top: 6px;
+    }
+    .project-link-badge i {
+      color: #e36d92;
+    }
+    .project-link-badge:hover {
+      background: white;
+      border-color: #e36d92;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(177,62,98,0.12);
+    }
   </style>
 </head>
 <body>
 
 <div class="resume-container">
-  <!-- hero interactive section -->
+  <!-- hero section -->
   <div class="hero-section">
     <div class="hero-content">
       <div class="name-titles">
@@ -346,7 +364,8 @@
           <span><i class="fas fa-map-marker-alt"></i> Dengkil, Selangor</span>
           <a href="tel:0179422338"><i class="fas fa-phone-alt"></i> 017-9422338</a>
           <a href="mailto:nisashahnahar@gmail.com"><i class="far fa-envelope"></i> nisashahnahar@gmail.com</a>
-          <a href="https://www.linkedin.com/in/nisa-shah-nahar-209652272/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <!-- LinkedIn link updated with correct profile -->
+          <a href="https://www.linkedin.com/in/nisa-shah-nahar-209652272" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
           <a href="https://github.com/Nisa-droid-coder" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
       </div>
@@ -357,7 +376,7 @@
   </div>
 
   <div class="dashboard-grid">
-    <!-- LEFT COLUMN: Summary, Skills, Fun Interactive -->
+    <!-- LEFT COLUMN -->
     <div>
       <div class="card">
         <div class="card-header">
@@ -368,7 +387,6 @@
         <div class="highlight-text">
           <i class="fas fa-heart" style="color:#e36d92;"></i>  “Turning data into delightful decisions — with empathy & code”
         </div>
-        <!-- interactive like button or fun fact -->
         <button class="btn-interact" id="funFactBtn"><i class="fas fa-star-of-life"></i> ✨ Spark a fun fact ✨</button>
         <div id="funFactMsg" class="interactive-message" style="display: none;">
           💡 Did you know? I built a ML system for real-time hypertension prediction across age groups — combining health data science & fairness!
@@ -387,7 +405,7 @@
           <span class="skill-badge">Web Scraping</span><span class="skill-badge">Data Preprocessing</span>
         </div>
         <div class="stats-row" style="margin-top: 1rem;">
-          <div class="stat-card"><span class="stat-number">3.32</span><br>CGPA (CS)</div>
+          <div class="stat-card"><span class="stat-number">3.4</span><br>CGPA (CS)</div>
           <div class="stat-card"><span class="stat-number">3.38</span><br>CGPA (Diploma)</div>
           <div class="stat-card"><span class="stat-number">3+</span><br>Years Coding</div>
         </div>
@@ -396,7 +414,7 @@
         </div>
       </div>
 
-      <!-- interactive internship countdown (because date 2026) -->
+      <!-- Internship countdown -->
       <div class="card">
         <div class="card-header">
           <i class="far fa-calendar-check"></i>
@@ -408,7 +426,7 @@
       </div>
     </div>
 
-    <!-- RIGHT COLUMN: Work Experience + Education + Project teaser -->
+    <!-- RIGHT COLUMN -->
     <div>
       <div class="card">
         <div class="card-header">
@@ -450,6 +468,10 @@
           <div style="font-weight:700;">🎓 Bachelor of Computer Science (Data Science)</div>
           <div class="company">Multimedia University Cyberjaya · CGPA 3.4</div>
           <div><strong>📌 Final Year Project:</strong> ML-based real-time hypertension prediction across age groups</div>
+          <!-- FYP project link connected -->
+          <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" class="project-link-badge">
+            <i class="fas fa-external-link-alt"></i> Live Dashboard
+          </a>
         </div>
         <div class="edu-item" style="margin-top: 1rem;">
           <div style="font-weight:700;">🎓 Diploma of Information Technology</div>
@@ -461,7 +483,7 @@
         </div>
       </div>
 
-      <!-- dynamic interactive project gallery / surprise click -->
+      <!-- live skill interaction -->
       <div class="card">
         <div class="card-header">
           <i class="fas fa-chart-simple"></i>
@@ -475,15 +497,15 @@
         <div id="skillDetailMsg" class="interactive-message" style="display: none; background:#ffeef3; font-size:0.85rem;"></div>
       </div>
       
-      <!-- github / linkedin preview with badge hover -->
+      <!-- digital footprint -->
       <div class="card">
         <div class="card-header">
           <i class="fab fa-github-alt"></i>
           <h2>digital footprint</h2>
         </div>
-        <div style="display: flex; gap: 1rem; justify-content: space-around;">
-          <a href="#" class="contact-pills" style="background:#feeef3; width:100%; justify-content:center;"><i class="fab fa-github"></i> github.com/Nisa-droid-coder</a>
-          <a href="#" class="contact-pills" style="background:#feeef3; width:100%; justify-content:center;"><i class="fab fa-linkedin"></i> linkedin.com/in/nisa-shah-nahar</a>
+        <div style="display: flex; gap: 1rem; justify-content: space-around; flex-wrap: wrap;">
+          <a href="https://github.com/Nisa-droid-coder" target="_blank" class="contact-pills" style="background:#feeef3; width:100%; justify-content:center;"><i class="fab fa-github"></i> github.com/Nisa-droid-coder</a>
+          <a href="https://www.linkedin.com/in/nisa-shah-nahar-209652272" target="_blank" class="contact-pills" style="background:#feeef3; width:100%; justify-content:center;"><i class="fab fa-linkedin"></i> linkedin.com/in/nisa-shah-nahar</a>
         </div>
         <p style="font-size:0.75rem; margin-top: 10px; text-align:center;">✨ Open to collaboration & data-driven innovation ✨</p>
       </div>
@@ -495,157 +517,165 @@
 </div>
 
 <script>
-  // interactive fun fact toggle
-  const funFactBtn = document.getElementById('funFactBtn');
-  const funFactMsg = document.getElementById('funFactMsg');
-  funFactBtn.addEventListener('click', () => {
-    if (funFactMsg.style.display === 'none' || getComputedStyle(funFactMsg).display === 'none') {
-      funFactMsg.style.display = 'block';
-      funFactBtn.innerHTML = '<i class="fas fa-times-circle"></i> Hide fun fact';
-    } else {
-      funFactMsg.style.display = 'none';
-      funFactBtn.innerHTML = '<i class="fas fa-star-of-life"></i> ✨ Spark a fun fact ✨';
+  (function() {
+    // fun fact
+    const funFactBtn = document.getElementById('funFactBtn');
+    const funFactMsg = document.getElementById('funFactMsg');
+    funFactBtn.addEventListener('click', () => {
+      if (funFactMsg.style.display === 'none' || getComputedStyle(funFactMsg).display === 'none') {
+        funFactMsg.style.display = 'block';
+        funFactBtn.innerHTML = '<i class="fas fa-times-circle"></i> Hide fun fact';
+      } else {
+        funFactMsg.style.display = 'none';
+        funFactBtn.innerHTML = '<i class="fas fa-star-of-life"></i> ✨ Spark a fun fact ✨';
+      }
+    });
+
+    // ML & Scraper details
+    const mlBtn = document.getElementById('mlSkillBtn');
+    const scrapeBtn = document.getElementById('scrapeSkillBtn');
+    const skillDetailMsg = document.getElementById('skillDetailMsg');
+
+    mlBtn.addEventListener('click', () => {
+      skillDetailMsg.style.display = 'block';
+      skillDetailMsg.innerHTML = '<i class="fas fa-chart-line"></i> 🧠 Hypertension Prediction Project: built a real-time ML system using PyTorch & data from multi-age groups — achieved robust clinical insights, focus on fairness across demographics. <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" style="color:#b13e62;font-weight:600;display:inline-block;margin-top:6px;"><i class="fas fa-external-link-alt"></i> Live Dashboard</a>';
+      skillDetailMsg.style.background = "#ffe6ef";
+    });
+    scrapeBtn.addEventListener('click', () => {
+      skillDetailMsg.style.display = 'block';
+      skillDetailMsg.innerHTML = '<i class="fas fa-code"></i> 🕸️ Web scraping at Fresh Futures: Python + BeautifulSoup/HTML parsing, cleaned 10k+ records, reduced duplication by 32%, boosted recommendation quality via structured datasets.';
+      skillDetailMsg.style.background = "#ffe6ef";
+    });
+
+    // countdown to July 27, 2026
+    function updateCountdown() {
+      const targetDate = new Date(2026, 6, 27);
+      const now = new Date();
+      const diff = targetDate - now;
+      const countdownDiv = document.getElementById('countdownDisplay');
+      if (diff <= 0) {
+        countdownDiv.innerHTML = "🎉 Internship period started! 🎉";
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (86400000)) / (3600000));
+      const minutes = Math.floor((diff % 3600000) / 60000);
+      countdownDiv.innerHTML = `📅 ${days} days  ${hours} hours  ${minutes} min   → 27 July 2026`;
     }
-  });
-
-  // ML & Scraper interactive details
-  const mlBtn = document.getElementById('mlSkillBtn');
-  const scrapeBtn = document.getElementById('scrapeSkillBtn');
-  const skillDetailMsg = document.getElementById('skillDetailMsg');
-
-  mlBtn.addEventListener('click', () => {
-    skillDetailMsg.style.display = 'block';
-    skillDetailMsg.innerHTML = '<i class="fas fa-chart-line"></i> 🧠 Hypertension Prediction Project: built a real-time ML system using PyTorch & data from multi-age groups — achieved robust clinical insights, focus on fairness across demographics.';
-    skillDetailMsg.style.background = "#ffe6ef";
-  });
-  scrapeBtn.addEventListener('click', () => {
-    skillDetailMsg.style.display = 'block';
-    skillDetailMsg.innerHTML = '<i class="fas fa-code"></i> 🕸️ Web scraping at Fresh Futures: Python + BeautifulSoup/HTML parsing, cleaned 10k+ records, reduced duplication by 32%, boosted recommendation quality via structured datasets.';
-    skillDetailMsg.style.background = "#ffe6ef";
-  });
-  // optional - click elsewhere to close? but fine
-
-  // countdown to July 27, 2026
-  function updateCountdown() {
-    const targetDate = new Date(2026, 6, 27); // July 27 2026 (month 6 = July)
-    const now = new Date();
-    const diff = targetDate - now;
-    const countdownDiv = document.getElementById('countdownDisplay');
-    if (diff <= 0) {
-      countdownDiv.innerHTML = "🎉 Internship period started! 🎉";
-      return;
-    }
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (86400000)) / (3600000));
-    const minutes = Math.floor((diff % 3600000) / 60000);
-    countdownDiv.innerHTML = `📅 ${days} days  ${hours} hours  ${minutes} min   → 27 July 2026`;
-  }
-  updateCountdown();
-  document.getElementById('countdownRefreshBtn').addEventListener('click', () => {
     updateCountdown();
-    const tempMsg = document.createElement('div');
-    tempMsg.className = 'interactive-message';
-    tempMsg.innerHTML = '⏳ Countdown refreshed! Ready to innovate.';
-    tempMsg.style.marginTop = '8px';
-    const parent = document.getElementById('countdownDisplay').parentNode;
-    const oldMsg = parent.querySelector('.temp-countdown-msg');
-    if(oldMsg) oldMsg.remove();
-    tempMsg.classList.add('temp-countdown-msg');
-    parent.appendChild(tempMsg);
-    setTimeout(() => { tempMsg.remove(); }, 1800);
-  });
+    document.getElementById('countdownRefreshBtn').addEventListener('click', () => {
+      updateCountdown();
+      const parent = document.getElementById('countdownDisplay').parentNode;
+      const oldMsg = parent.querySelector('.temp-countdown-msg');
+      if(oldMsg) oldMsg.remove();
+      const tempMsg = document.createElement('div');
+      tempMsg.className = 'interactive-message temp-countdown-msg';
+      tempMsg.innerHTML = '⏳ Countdown refreshed! Ready to innovate.';
+      tempMsg.style.marginTop = '8px';
+      parent.appendChild(tempMsg);
+      setTimeout(() => { tempMsg.remove(); }, 1800);
+    });
 
-  // Add hover animation to stat cards
-  const stats = document.querySelectorAll('.stat-card');
-  stats.forEach(stat => {
-    stat.addEventListener('mouseenter', (e) => {
-      stat.style.transform = 'scale(1.02)';
-      stat.style.transition = '0.1s';
-    });
-    stat.addEventListener('mouseleave', () => {
-      stat.style.transform = 'scale(1)';
-    });
-  });
-  
-  // simple copy contact (extra delight but not mandatory)
-  const emailLink = document.querySelector('a[href="mailto:nisashahnahar@gmail.com"]');
-  if(emailLink) {
-    emailLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      navigator.clipboard.writeText('nisashahnahar@gmail.com');
-      const msgDiv = document.createElement('div');
-      msgDiv.className = 'interactive-message';
-      msgDiv.innerText = '📧 Email copied to clipboard!';
-      msgDiv.style.position = 'fixed';
-      msgDiv.style.bottom = '20px';
-      msgDiv.style.right = '20px';
-      msgDiv.style.zIndex = '999';
-      msgDiv.style.maxWidth = '220px';
-      msgDiv.style.background = '#ffecf0';
-      msgDiv.style.borderRadius = '2rem';
-      msgDiv.style.padding = '10px 18px';
-      msgDiv.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-      document.body.appendChild(msgDiv);
-      setTimeout(() => { msgDiv.remove(); }, 1800);
-    });
-  }
-  
-  // optional interactive github link placeholder (just preview)
-  const gitLink = document.querySelector('a[href="#"]'); 
-  // but we have two links, better generic approach : first github link
-  const gitLinks = document.querySelectorAll('.contact-pills a');
-  for(let link of gitLinks) {
-    if(link.href.includes('github.com') || link.innerText.includes('github')) {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.open('https://github.com/Nisa-droid-coder', '_blank');
+    // stat cards hover effect
+    const stats = document.querySelectorAll('.stat-card');
+    stats.forEach(stat => {
+      stat.addEventListener('mouseenter', () => {
+        stat.style.transform = 'scale(1.02)';
+        stat.style.transition = '0.1s';
       });
-    } else if(link.innerText.includes('linkedin')) {
-      link.addEventListener('click', (e) => {
+      stat.addEventListener('mouseleave', () => {
+        stat.style.transform = 'scale(1)';
+      });
+    });
+
+    // email copy on click
+    const emailLink = document.querySelector('a[href="mailto:nisashahnahar@gmail.com"]');
+    if(emailLink) {
+      emailLink.addEventListener('click', (e) => {
         e.preventDefault();
-        window.open('https://www.linkedin.com/in/nisa-shah-nahar-209652272', '_blank');
+        navigator.clipboard.writeText('nisashahnahar@gmail.com').catch(() => {});
+        const msgDiv = document.createElement('div');
+        msgDiv.className = 'interactive-message';
+        msgDiv.innerText = '📧 Email copied to clipboard!';
+        msgDiv.style.position = 'fixed';
+        msgDiv.style.bottom = '20px';
+        msgDiv.style.right = '20px';
+        msgDiv.style.zIndex = '999';
+        msgDiv.style.maxWidth = '220px';
+        msgDiv.style.background = '#ffecf0';
+        msgDiv.style.borderRadius = '2rem';
+        msgDiv.style.padding = '10px 18px';
+        msgDiv.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+        document.body.appendChild(msgDiv);
+        setTimeout(() => { msgDiv.remove(); }, 1800);
       });
     }
-  }
-  
-  // add extra micro interaction: hover on skill badges show fade
-  const badges = document.querySelectorAll('.skill-badge');
-  badges.forEach(b => {
-    b.addEventListener('click', () => {
-      const msgAlert = document.createElement('div');
-      msgAlert.classList.add('interactive-message');
-      msgAlert.textContent = `⚡ ${b.innerText} — core competency ready`;
-      msgAlert.style.position = 'fixed';
-      msgAlert.style.bottom = '20px';
-      msgAlert.style.left = '20px';
-      msgAlert.style.zIndex = '1000';
-      msgAlert.style.background = '#ffffffc9';
-      msgAlert.style.backdropFilter = 'blur(4px)';
-      document.body.appendChild(msgAlert);
-      setTimeout(() => msgAlert.remove(), 1300);
+
+    // Skill badge click feedback
+    const badges = document.querySelectorAll('.skill-badge');
+    badges.forEach(b => {
+      b.addEventListener('click', () => {
+        const msgAlert = document.createElement('div');
+        msgAlert.classList.add('interactive-message');
+        msgAlert.textContent = `⚡ ${b.innerText} — core competency ready`;
+        msgAlert.style.position = 'fixed';
+        msgAlert.style.bottom = '20px';
+        msgAlert.style.left = '20px';
+        msgAlert.style.zIndex = '1000';
+        msgAlert.style.background = '#ffffffc9';
+        msgAlert.style.backdropFilter = 'blur(4px)';
+        document.body.appendChild(msgAlert);
+        setTimeout(() => msgAlert.remove(), 1300);
+      });
     });
-  });
-  
-  // final addition: personal highlight iteration for the fun fact default hidden
-  funFactMsg.style.display = 'none';
-  
-  // responsive floating effect for card headers
-  const headers = document.querySelectorAll('.card-header');
-  headers.forEach(h => {
-    h.addEventListener('mouseover', () => {
-      h.style.transition = '0.15s';
-      h.style.paddingLeft = '0.2rem';
+
+    // LinkedIn + GitHub links (already correct in HTML, but keep interactive)
+    // ensure all contact-pills with linkedin/github open correctly
+    document.querySelectorAll('.contact-pills a').forEach(link => {
+      if (link.href.includes('linkedin.com') || link.innerText.includes('LinkedIn')) {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.open('https://www.linkedin.com/in/nisa-shah-nahar-209652272', '_blank');
+        });
+      } else if (link.href.includes('github.com') || link.innerText.includes('GitHub')) {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.open('https://github.com/Nisa-droid-coder', '_blank');
+        });
+      }
     });
-    h.addEventListener('mouseout', () => {
-      h.style.paddingLeft = '';
+
+    // fix any other github/linkedin link in digital footprint
+    document.querySelectorAll('.card .contact-pills a').forEach(link => {
+      if (link.innerText.includes('github.com')) {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.open('https://github.com/Nisa-droid-coder', '_blank');
+        });
+      } else if (link.innerText.includes('linkedin.com')) {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.open('https://www.linkedin.com/in/nisa-shah-nahar-209652272', '_blank');
+        });
+      }
     });
-  });
-  
-  // For the interactive message that might stay persistent: if user clicks several times, handle
-  // just nice to have
-  
-  // fix preference: add 1 more interactive display: I will display current favourite colour theme note in console
-  console.log('🌸 Light Pink Interactive Resume ready — data-driven & vibrant!');
+
+    // fun fact default hidden
+    funFactMsg.style.display = 'none';
+
+    // card header hover
+    document.querySelectorAll('.card-header').forEach(h => {
+      h.addEventListener('mouseover', () => {
+        h.style.transition = '0.15s';
+        h.style.paddingLeft = '0.2rem';
+      });
+      h.addEventListener('mouseout', () => {
+        h.style.paddingLeft = '';
+      });
+    });
+
+    console.log('🌸 Light Pink Interactive Resume — data-driven & vibrant!');
+  })();
 </script>
 </body>
 </html>
