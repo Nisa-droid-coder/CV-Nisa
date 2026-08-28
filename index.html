@@ -96,6 +96,17 @@
       margin-left: 0.5rem;
     }
 
+    .badge-cyber {
+      background: #4a7c59;
+      color: white;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.75rem;
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+
     .contact-pills {
       display: flex;
       flex-wrap: wrap;
@@ -375,6 +386,22 @@
       color: #1f2b4e;
     }
 
+    .cert-block {
+      background: #eaf4ec;
+      border-radius: 1.5rem;
+      padding: 0.8rem 1.2rem;
+      border-left: 6px solid #4a7c59;
+      margin: 0.8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .cert-block i {
+      font-size: 2rem;
+      color: #4a7c59;
+    }
+
     ul {
       margin-left: 1.2rem;
       font-size: 0.85rem;
@@ -390,9 +417,41 @@
       padding: 0.3rem 1.2rem;
       display: inline-block;
       font-weight: 600;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: #1f2b4e;
       border: 1px dashed #3d5a8c;
+    }
+
+    .pdf-viewer {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #eef2f8;
+      background: #f5f7fa;
+      margin-top: 8px;
+    }
+    .pdf-viewer embed {
+      display: block;
+      width: 100%;
+      height: 280px;
+    }
+    .pdf-viewer iframe {
+      display: block;
+      width: 100%;
+      height: 280px;
+      border: none;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 600px) {
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -407,6 +466,7 @@
         <div class="badge-pink">
           <i class="fas fa-briefcase"></i> IT Intern · Data & Systems
           <span class="badge-award"><i class="fas fa-medal"></i> Silver @ iNVENTX 2026</span>
+          <span class="badge-cyber"><i class="fas fa-shield-alt"></i> Cybersecurity Certified</span>
         </div>
         <div class="contact-pills">
           <span><i class="fas fa-map-marker-alt"></i> Dengkil, Selangor</span>
@@ -435,22 +495,59 @@
           Final-year Data Science student @ MMU, passionate about systems, data, and building practical solutions. 
           Seeking <strong>full-time IT / Data Analyst</strong> opportunities from Oct 2026.
         </p>
-        <!-- AWARD HIGHLIGHT -->
-        <div class="award-block">
-          <i class="fas fa-trophy"></i>
-          <div>
-            <strong>🏆 Silver Award – iNVENTX Invention Competition 2026</strong><br />
-            <span style="font-size:0.85rem;">ML-Based Prediction of Early-Onset Hypertension in Young Adults</span>
-            <div style="margin-top:4px;"><span class="certificate-badge"><i class="fas fa-certificate"></i> Certificate · 2 July 2026</span></div>
+
+        <!-- CERTIFICATE 1: iNVENTX Silver Award -->
+        <div class="award-block" style="flex-direction: column; align-items: flex-start; background: #fcf5e8; padding: 1rem; border-radius: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; width: 100%;">
+            <i class="fas fa-trophy" style="font-size: 2rem; color: #d4a017;"></i>
+            <div>
+              <strong>🏆 Silver Award – iNVENTX 2026</strong><br />
+              <span style="font-size:0.85rem;">ML-Based Prediction of Early-Onset Hypertension</span>
+              <div style="margin-top:4px;"><span class="certificate-badge"><i class="fas fa-certificate"></i> 2 July 2026</span></div>
+            </div>
+          </div>
+          <!-- PDF Viewer for iNVENTX Certificate -->
+          <div class="pdf-viewer">
+            <embed src="018 NISA BINTI SHAH NAHAR.pdf#page=1" type="application/pdf" />
+          </div>
+          <div style="font-size: 0.7rem; color: #888; margin-top: 4px; text-align: center; width: 100%;">
+            <a href="018 NISA BINTI SHAH NAHAR.pdf#page=1" target="_blank" style="color: #2b3a67; font-weight: 600;">
+              <i class="fas fa-external-link-alt"></i> View full certificate
+            </a>
           </div>
         </div>
+
+        <!-- CERTIFICATE 2: Cybersecurity Fundamentals -->
+        <div class="cert-block" style="flex-direction: column; align-items: flex-start; background: #eaf4ec; padding: 1rem; border-radius: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; width: 100%;">
+            <i class="fas fa-shield-alt" style="font-size: 2rem; color: #4a7c59;"></i>
+            <div>
+              <strong>🔒 Cybersecurity Fundamentals Certified</strong><br />
+              <span style="font-size:0.85rem;">US Council · Certificate: USC00016207</span>
+              <div style="margin-top:4px;"><span class="certificate-badge" style="background:#d4e8d8; border-color:#4a7c59;"><i class="fas fa-certificate"></i> 2 November 2025</span></div>
+            </div>
+          </div>
+          <!-- PDF Viewer for Cybersecurity Certificate -->
+          <div class="pdf-viewer">
+            <embed src="certificate (1).pdf#page=1" type="application/pdf" />
+          </div>
+          <div style="font-size: 0.7rem; color: #888; margin-top: 4px; text-align: center; width: 100%; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="certificate (1).pdf#page=1" target="_blank" style="color: #2b3a67; font-weight: 600;">
+              <i class="fas fa-external-link-alt"></i> View certificate
+            </a>
+            <a href="https://www.us-council.com/verifyCertificate.php" target="_blank" style="color: #4a7c59; font-weight: 600;">
+              <i class="fas fa-check-circle"></i> Verify authenticity
+            </a>
+          </div>
+        </div>
+
         <div class="highlight-text">
           <i class="fas fa-bullseye" style="color:#2b3a67;"></i>  “Bridge between data insights and real-world systems — reliable, curious, and impact-driven.”
         </div>
         <button class="btn-interact" id="funFactBtn"><i class="fas fa-lightbulb"></i> 💡 Quick insight</button>
         <div id="funFactMsg" class="interactive-message" style="display: none;">
           🔍 During internship: built internal forms with HTML/JS, extracted server data, and streamlined user/package account handling. <br />
-          <span style="font-size:0.8rem; margin-top:6px; display:block;">🏅 Also awarded Silver at iNVENTX 2026 for hypertension prediction research.</span>
+          <span style="font-size:0.8rem; margin-top:6px; display:block;">🏅 Silver at iNVENTX 2026 · 🔒 Cybersecurity Fundamentals certified.</span>
         </div>
       </div>
 
@@ -465,6 +562,7 @@
           <span class="skill-badge">Pandas</span><span class="skill-badge">PyTorch</span><span class="skill-badge">ML Basics</span>
           <span class="skill-badge">Web Scraping</span><span class="skill-badge">Data Preprocessing</span>
           <span class="skill-badge">System Troubleshoot</span>
+          <span class="skill-badge" style="background:#d4e8d8;">Cybersecurity</span>
         </div>
         <div class="stats-row" style="margin-top: 1rem;">
           <div class="stat-card"><span class="stat-number">3.4</span><br>CGPA (CS)</div>
@@ -565,9 +663,6 @@
           <a href="https://hypertension-dashboard.streamlit.app/" target="_blank" class="project-link-badge">
             <i class="fas fa-external-link-alt"></i> Live Dashboard
           </a>
-          <div style="margin-top: 8px; font-size:0.8rem; background:#f5f9ff; padding:0.3rem 0.8rem; border-radius:1rem; display:inline-block;">
-            <i class="fas fa-file-pdf"></i> Certificate: Silver Award, iNVENTX Invention Competition 2026
-          </div>
         </div>
         <div class="edu-item" style="margin-top: 1rem;">
           <div style="font-weight:700;">🎓 Diploma of Information Technology</div>
@@ -576,6 +671,11 @@
         </div>
         <div class="highlight-text" style="margin-top: 0.8rem;">
           <i class="fas fa-microchip"></i> Passionate about real-time systems, data pipelines, and delivering business value.
+        </div>
+        <!-- Cert summary -->
+        <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="certificate-badge" style="background:#fcf5e8; border-color:#d4a017;"><i class="fas fa-trophy"></i> iNVENTX Silver 2026</span>
+          <span class="certificate-badge" style="background:#eaf4ec; border-color:#4a7c59;"><i class="fas fa-shield-alt"></i> Cybersecurity Fundamentals</span>
         </div>
       </div>
 
@@ -589,6 +689,7 @@
         <div style="display: flex; gap: 12px; flex-wrap: wrap;">
           <button id="mlSkillBtn" class="btn-interact" style="width:auto; flex:1;"><i class="fas fa-brain"></i> ML & data</button>
           <button id="scrapeSkillBtn" class="btn-interact" style="width:auto; flex:1;"><i class="fas fa-server"></i> Systems</button>
+          <button id="cyberSkillBtn" class="btn-interact" style="width:auto; flex:1; background:#d4e8d8;"><i class="fas fa-shield-alt"></i> Cyber</button>
         </div>
         <div id="skillDetailMsg" class="interactive-message" style="display: none; background:#f0f6ff; font-size:0.85rem;"></div>
       </div>
@@ -608,8 +709,9 @@
     </div>
   </div>
   <footer>
-    <i class="fas fa-briefcase" style="color:#2b3a67;"></i> IT Intern · ready for the next step — let’s connect. 
+    <i class="fas fa-briefcase" style="color:#2b3a67;"></i> IT Intern · ready for the next step — let's connect.
     <span style="margin-left:1rem;"><i class="fas fa-medal" style="color:#d4a017;"></i> Silver @ iNVENTX 2026</span>
+    <span style="margin-left:1rem;"><i class="fas fa-shield-alt" style="color:#4a7c59;"></i> Cybersecurity Certified</span>
   </footer>
 </div>
 
@@ -628,9 +730,10 @@
       }
     });
 
-    // ML & Systems interactive
+    // ML, Systems & Cyber interactive
     const mlBtn = document.getElementById('mlSkillBtn');
     const scrapeBtn = document.getElementById('scrapeSkillBtn');
+    const cyberBtn = document.getElementById('cyberSkillBtn');
     const skillDetailMsg = document.getElementById('skillDetailMsg');
 
     mlBtn.addEventListener('click', () => {
@@ -643,10 +746,15 @@
       skillDetailMsg.innerHTML = '<i class="fas fa-server"></i> 🔧 At Aurelius Hospital: building internal forms, extracting server data with JS, handling user/package accounts — bridging IT and operations.';
       skillDetailMsg.style.background = "#e6edfa";
     });
+    cyberBtn.addEventListener('click', () => {
+      skillDetailMsg.style.display = 'block';
+      skillDetailMsg.innerHTML = '<i class="fas fa-shield-alt"></i> 🔒 <strong>Cybersecurity Fundamentals Certified</strong> (US Council, Nov 2025). Certificate: USC00016207. <a href="https://www.us-council.com/verifyCertificate.php" target="_blank" style="color:#1f2b4e;font-weight:600;display:inline-block;margin-top:6px;"><i class="fas fa-check-circle"></i> Verify authenticity</a>';
+      skillDetailMsg.style.background = "#d4e8d8";
+    });
 
     // Countdown: internship end date (Oct 18, 2026)
     function updateCountdown() {
-      const endDate = new Date(2026, 9, 18); // Oct 18, 2026
+      const endDate = new Date(2026, 9, 18);
       const now = new Date();
       const diff = endDate - now;
       const countdownDiv = document.getElementById('countdownDisplay');
@@ -729,7 +837,7 @@
     });
 
     funFactMsg.style.display = 'none';
-    console.log('💼 Professional portfolio — with iNVENTX 2026 Silver Award');
+    console.log('💼 Professional portfolio — with iNVENTX 2026 Silver Award & Cybersecurity Certification');
   })();
 </script>
 </body>
